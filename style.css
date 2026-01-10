@@ -1,6 +1,3 @@
-html {
-    height: 100%;
-}
 
 body {
     background-color: #0d0d0d;
@@ -8,6 +5,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: unset;
+    overflow-x: hidden;
 }
 
 header {
