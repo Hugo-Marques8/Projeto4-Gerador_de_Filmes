@@ -1,6 +1,7 @@
 html {
     height: 100%;
 }
+
 body {
     background-color: #0d0d0d;
     display: flex;
@@ -76,20 +77,38 @@ select {
 }
 
 #secao-fimes {
-   display: flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    /* Garante que o padding não aumente a largura */
 }
 
 .filmes-card img {
-    min-height: 50vh;
-}
-.filmes-card {
-   margin: 20px;
+
 }
 
+.filmes-card {}
+
 .filmes-info {
-    width: 100%;
     color: #ffffff;
 }
+
 .filmes-info h2 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
 }
+.filmes-info ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.filmes-info span {
+    display: flex;
+    width: max-content;
+    background-color: #31225D;
+    padding: 4px;
+    align-items: center;
+}
+

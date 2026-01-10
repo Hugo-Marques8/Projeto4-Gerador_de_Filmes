@@ -9,16 +9,46 @@ export function posterFilme(filme) {
 }
 
 export function infoFilme(filme) {
-    const filmesInfo = document.querySelector('.filmes-info');
+   const filmesInfo = document.querySelector('.filmes-info');
     const titulo = document.createElement('h2');
-    titulo.textContent = filme.Title
+    const ul = document.createElement('ul')
+    const liAno =document.createElement('li')
+    const liGenero =document.createElement('li')
+    const liDuracao =document.createElement('li')
     const ano = document.createElement('span');
     const genero = document.createElement('span');
     const duracao = document.createElement('span');
-     const sinopse = document.createElement('p');
+    const sinopse = document.createElement('p');
+    titulo.textContent = filme.Title
     ano.textContent = filme.Year;
     genero.textContent = filme.Genre;
     duracao.textContent = filme.Runtime;
     sinopse.textContent = filme.Plot;
-    filmesInfo.append(titulo, ano, genero, duracao, sinopse)
-}
+    liAno.appendChild(ano)
+    liGenero.appendChild(genero)
+    liDuracao.appendChild(duracao)
+    ul.append(liAno, liGenero, liDuracao)
+    filmesInfo.append(titulo, ul, sinopse)
+};
+
+
+/*const filmesInfo = document.querySelector('.filmes-info');
+    const titulo = document.createElement('h2');
+    const ul = document.createElement('ul')
+    const liAno =document.createElement('li')
+    const liGenero =document.createElement('li')
+    const liDuracao =document.createElement('li')
+    const ano = document.createElement('span');
+    const genero = document.createElement('span');
+    const duracao = document.createElement('span');
+    const sinopse = document.createElement('p');
+    titulo.textContent = filme.Title
+    ano.textContent = filme.Year;
+    genero.textContent = filme.Genre;
+    duracao.textContent = filme.Runtime;
+    sinopse.textContent = filme.Plot;
+    liAno.appendChild(ano)
+    liGenero.appendChild(genero)
+    liDuracao.appendChild(duracao)
+    ul.append(liAno, liGenero, liDuracao)
+    filmesInfo.append(titulo, ul, sinopse)*/
