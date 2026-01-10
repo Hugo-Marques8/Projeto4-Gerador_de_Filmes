@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes aleatorio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Movie Random</h1>
+    <h2>Encontre filmes para assistir de forma aleatoria</h2>
+    <p>Chega de rolar a tela sem decidir.
+      Descubra um filme perfeito para o seu momento. sozinho, em casal ou com amigos.
+    </p>
+  </header>
+  <main>
+    <section id="secao-gerar-filmes" class="section">
+      <h3>filmes por gêneros, avaliação da critica e público</h3>
+      <label for="genero">Escolha o Gênero
+        <select id="genero">
+          <option value="Action">Ação</option>
+          <option value="Comedy">Comédia</option>
+          <option value="Drama">Drama</option>
+          <option value="Horror">Terror</option>
+          <option value="Romance">Romance</option>
+          <option value="Sci-Fi">Ficção Científica</option>
+          <option value="Thriller">Suspense</option>
+          <option value="Animation">Animação</option>
+        </select>
+        <button id="btn-buscar-critica">Procurar por avaliação da critica</button>
+        <button id="btn-buscar-publico">Procurar por avaliação do público</button>
+      </label>
+    </section>
+    <section id="secao-fimes" class="section-hidden">
+      <div class="filmes-card">
+      </div>
+      <div class="filmes-info">
+      </div>
+    </section>
+  </main>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="API.js"></script>
+  <script type="module" src="event.js"></script>
+  <script type="module" src="ui.js"></script>
+</body>
+
+</html>
