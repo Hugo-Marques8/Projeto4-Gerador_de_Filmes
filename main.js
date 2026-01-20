@@ -4,7 +4,9 @@ const state = {
     request: false,
     genre: null,
     select: 'Action',
-    resp: null
+    resp: null,
+    trocarPage: 0,
+    positionPage: 20
 }
 const genres = {
     "Action": 28,
