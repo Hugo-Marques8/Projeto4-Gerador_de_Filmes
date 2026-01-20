@@ -51,14 +51,8 @@ header p {
 
 .section label {
     margin: 0;
+    font-size: 1.8rem;
 }
-
-.section form {
-    display: flex;
-    width: 100%;
-    font-size: 1.5rem;
-}
-
 .section button {
     font-size: 1.5rem;
     padding: 15px;
@@ -71,7 +65,6 @@ header p {
 
 select {
     font-size: 1.5rem;
-    width: 100%;
 }
 
 .section option {

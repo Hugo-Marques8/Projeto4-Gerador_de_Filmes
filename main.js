@@ -1,4 +1,4 @@
-import { eventBuscarFilmes } from './adapters.js';
+import { eventBuscarFilmes } from './controller.js';
 
 const state = {
     request: false,

@@ -19,7 +19,7 @@
   <main>
     <section id="secao-gerar-filmes" class="section">
       <h3>filmes por gêneros, avaliação da critica e público</h3>
-      <form action="">
+      
         <label for="genero">Gênero
           <select id="genero">
             <option value="Action">Ação</option>
@@ -32,10 +32,10 @@
             <option value="Animation">Animação</option>
           </select>
         </label>
-        <label for="ano">Ano(Opcional)
-          <input type="number" >
+        <label for="ano">Ano(opcional)
+          <input type="number" id="ano" min="1874" max="2030" step="1">
         </label>
-      </form>
+     
       <button id="btn-buscar-critica"></a>Procurar por avaliação da critica</button>
       <button id="btn-buscar-publico">Procurar por avaliação do público</button>
     </section>
@@ -50,7 +50,7 @@
   <script type="module" src="API.js"></script>
   <script type="module" src="event.js"></script>
   <script type="module" src="ui.js"></script>
-  <script type="module" src="adapters.js"></script>
+  <script type="module" src="controller.js"></script>
 </body>
 
 </html>

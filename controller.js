@@ -1,4 +1,4 @@
-import { buscarFilme } from "./API.js"
+import { buscarFilme } from "./api.js"
 import { posterFilme, infoFilme } from "./ui.js"
 
 export async function eventBuscarFilmes(state, genres, sortBy) {
