@@ -13,28 +13,33 @@
     <h1>Movie Random</h1>
     <h2>Encontre filmes para assistir de forma aleatoria</h2>
     <p>Chega de rolar a tela sem decidir.
-      Descubra um filme perfeito para o seu momento. sozinho, em casal ou com amigos.
+      Descubra um filme perfeito para o seu momento, sozinho, em casal ou com amigos.
     </p>
   </header>
   <main>
     <section id="secao-gerar-filmes" class="section">
       <h3>filmes por gêneros, avaliação da critica e público</h3>
-      <label for="genero">Escolha o Gênero
-        <select id="genero">
-          <option value="Action">Ação</option>
-          <option value="Comedy">Comédia</option>
-          <option value="Drama">Drama</option>
-          <option value="Horror">Terror</option>
-          <option value="Romance">Romance</option>
-          <option value="Sci-Fi">Ficção Científica</option>
-          <option value="Thriller">Suspense</option>
-          <option value="Animation">Animação</option>
-        </select>
-        <button id="btn-buscar-critica">Procurar por avaliação da critica</button>
-        <button id="btn-buscar-publico">Procurar por avaliação do público</button>
-      </label>
+      <form action="">
+        <label for="genero">Gênero
+          <select id="genero">
+            <option value="Action">Ação</option>
+            <option value="Comedy">Comédia</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Terror</option>
+            <option value="Romance">Romance</option>
+            <option value="Sci-Fi">Ficção Científica</option>
+            <option value="Thriller">Suspense</option>
+            <option value="Animation">Animação</option>
+          </select>
+        </label>
+        <label for="ano">Ano(Opcional)
+          <input type="number" >
+        </label>
+      </form>
+      <button id="btn-buscar-critica"></a>Procurar por avaliação da critica</button>
+      <button id="btn-buscar-publico">Procurar por avaliação do público</button>
     </section>
-    <section id="secao-fimes" class="section-hidden">
+    <section id="secao-filmes" class="section-hidden">
       <div class="filmes-card">
       </div>
       <div class="filmes-info">
@@ -45,6 +50,7 @@
   <script type="module" src="API.js"></script>
   <script type="module" src="event.js"></script>
   <script type="module" src="ui.js"></script>
+  <script type="module" src="adapters.js"></script>
 </body>
 
 </html>

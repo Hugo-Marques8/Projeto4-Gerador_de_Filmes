@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #0d0d0d;
@@ -47,7 +50,11 @@ header p {
 }
 
 .section label {
-    margin: 20px;
+    margin: 0;
+}
+
+.section form {
+    display: flex;
 }
 
 .section button {
@@ -74,7 +81,7 @@ select {
     display: none;
 }
 
-#secao-fimes {
+#secao-filmes {
     display: flex;
     flex-direction: column;
     background-color: #161616;
@@ -85,6 +92,17 @@ select {
 }
 
 .filmes-card img {
+    /* Define a proporção padrão de pôsteres de cinema (2 de largura por 3 de altura) */
+    /*navegador já "guarda o lugar" da imagem antes mesmo dela carregar. Assim, o 'scrollIntoView' calcula a altura correta.*/
+    aspect-ratio: 2 / 3;
+    width: 100%;
+    /* Adapta-se à largura da tela do celular, Mas não deixa passar de 400px em telas grandes */
+    max-width: 400px;
+    /* Mantém a proporção correta */
+    height: auto;
+    /* Remove espaços extras embaixo da imagem */
+    display: block;
+
 
 }
 
@@ -94,14 +112,17 @@ select {
     color: #ffffff;
 }
 
+
 .filmes-info h2 {
     font-size: 2.2rem;
 }
+
 .filmes-info ul {
     display: flex;
     list-style: none;
     align-items: center;
 }
+
 .filmes-info span {
     display: flex;
     width: max-content;
@@ -109,4 +130,3 @@ select {
     padding: 4px;
     align-items: center;
 }
-
