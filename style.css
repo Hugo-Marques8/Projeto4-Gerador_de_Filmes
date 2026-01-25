@@ -53,6 +53,7 @@ header p {
     margin: 0;
     font-size: 1.8rem;
 }
+
 .section button {
     font-size: 1.5rem;
     padding: 15px;
@@ -125,4 +126,30 @@ select {
     background-color: #31225D;
     padding: 4px;
     align-items: center;
+}
+
+.provider {
+    background-color: #161616;
+    display: flex;
+    width: 100%;;
+    align-items: stretch;
+    color: #ffffff;
+}
+
+.provider #onde-assistir {
+    background-color: #39FF14;
+    color: #0d0d0d;
+    width: 100%;
+}
+
+.provider #onde-alugar {
+    background-color: #FF9100;
+    color: #0d0d0d;
+     width: 100%;
+}
+
+.provider #onde-comprar {
+    background-color: #FF5252;
+    color: #0d0d0d;
+     width: 100%;
 }

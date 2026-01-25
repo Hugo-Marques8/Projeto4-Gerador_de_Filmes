@@ -1,3 +1,4 @@
+import { ondeAssistir } from './controller.js';
 import { eventBuscarFilmes } from './controller.js';
 
 const state = {
@@ -5,6 +6,7 @@ const state = {
     genre: null,
     select: 'Action',
     resp: null,
+    id: null,
     trocarPage: 0,
     positionPage: 20
 }
@@ -18,17 +20,20 @@ const genres = {
     "Thriller": 53,  // Suspense
     "Animation": 16
 }
+
 const secaoFilmesInfo = document.querySelector('.filmes-info')
 const btnBuscarCritica = document.getElementById('btn-buscar-critica');
 const btnBuscarPublico = document.getElementById('btn-buscar-publico');
 btnBuscarCritica.addEventListener('click', async () => {
     const sortBy = 'vote_average.desc'
-    eventBuscarFilmes(state, genres, sortBy)
+    await eventBuscarFilmes(state, genres, sortBy)
+    ondeAssistir(state)
 })
 
 btnBuscarPublico.addEventListener('click', async () => {
     const sortBy = 'popularity.desc'
-    eventBuscarFilmes(state, genres, sortBy)
+    await eventBuscarFilmes(state, genres, sortBy)
+    ondeAssistir(state)
 })
 
 
